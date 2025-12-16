@@ -1,0 +1,2 @@
+##download eicar.txt and run as dos program
+[system.net.ServicePointManager]::Securityprotocol = @("Tls12","Tls11","Tls","Ssl3");(New-Object System.Net.WebClient).DownloadFile('https://secure.eicar.org/eicar.com.txt','C:\Users\Public\eicar.com.txt');Rename-Item -Path 'C:\Users\Public\eicar.com.txt' -NewName 'C:\Users\Public\eicar.com'; C:\Users\Public\eicar.com
