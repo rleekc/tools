@@ -1,0 +1,2 @@
+##download eicar.txt
+[system.net.ServicePointManager]::Securityprotocol = @("Tls12","Tls11","Tls","Ssl3");(New-Object System.Net.WebClient).DownloadFile('https://github.com/rleekc/Powershell-Scripts/raw/master/eicar.com.txt','C:\Users\Public\eicar.com.txt');notepad 'C:\Users\Public\eicar.com.txt'
